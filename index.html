@@ -7,7 +7,6 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
@@ -15,14 +14,8 @@
 
 <div class="layout">
 
-  <!-- 1: Temperature Chart -->
-  <div class="chart-card">
-    <h4>🌡 Temperature</h4>
-    <canvas id="tempChart"></canvas>
-  </div>
-
-  <!-- 5: Monitoring Card -->
   <div class="dashboard">
+
     <div class="header">
       <h1>🌳 DurioSense</h1>
       <span>Smart Durian Tree Monitoring</span><br>
@@ -30,6 +23,7 @@
     </div>
 
     <div class="grid">
+
       <div class="card">
         <div class="icon">🌡</div>
         <div class="label">Temperature</div>
@@ -54,6 +48,20 @@
         <div class="value" id="circ">--</div>
       </div>
 
+      <!-- ADDED -->
+      <div class="card">
+        <div class="icon">📅</div>
+        <div class="label">Planting Date</div>
+        <div class="value" id="plantingDate">--</div>
+      </div>
+
+      <!-- ADDED -->
+      <div class="card">
+        <div class="icon">⏳</div>
+        <div class="label">Tree Age</div>
+        <div class="value" id="treeAge">--</div>
+      </div>
+
       <div class="status" id="rain">Checking rain...</div>
     </div>
 
@@ -62,21 +70,13 @@
     </div>
   </div>
 
-  <!-- 3: Soil Moisture Chart -->
   <div class="chart-card">
     <h4>🌱 Soil Moisture</h4>
     <canvas id="soilChart"></canvas>
   </div>
 
-  <!-- 2: Humidity Chart -->
   <div class="chart-card">
-    <h4>💧 Humidity</h4>
-    <canvas id="humChart"></canvas>
-  </div>
-
-  <!-- 4: Tree Circumference Chart -->
-  <div class="chart-card">
-    <h4>🌲 Circumference</h4>
+    <h4>🌲 Tree Circumference</h4>
     <canvas id="circChart"></canvas>
   </div>
 
@@ -84,7 +84,6 @@
 
 <script src="app.js"></script>
 
-<!-- TREE HEALTH ALERT POPUP -->
 <div id="alertPopup" class="alert-popup">
   <div class="alert-box">
     <h3>⚠ Tree Health Alert</h3>
