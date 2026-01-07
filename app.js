@@ -153,7 +153,12 @@ function closeAlert() {
   document.getElementById("alertPopup").style.display = "none";
 }
 
+function toggleRainTrend() {
+  const card = document.getElementById("rainTrendCard");
+  card.style.display = card.style.display === "none" ? "block" : "none";
+}
 
   
+
 
 
