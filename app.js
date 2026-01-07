@@ -77,6 +77,8 @@ if (alerts.length > 0) {
 }
 
     document.getElementById("treeType").innerText = latest.tree_type;
+    document.getElementById("treeMeta").innerText =
+  "Planting Date: " + latest.planting_date + " | Tree Age: " + latest.tree_age + " years";
     document.getElementById("temp").innerText = latest.temperature + " °C";
     document.getElementById("hum").innerText = latest.humidity + " %";
     document.getElementById("soil").innerText = latest.soil + " %";
@@ -126,3 +128,4 @@ function closeAlert() {
 
 
   
+
