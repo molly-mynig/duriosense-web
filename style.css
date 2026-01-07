@@ -52,37 +52,6 @@ body {
   padding: 14px;
   text-align: center;
 }
-.weather-card {
-  background: #f9fafb;
-  border-radius: 12px;
-  padding: 14px;
-  text-align: center;
-  grid-column: span 2;   /* makes it centered like before */
-}
-
-.weather-card .value {
-  font-weight: 600;
-  margin-top: 6px;
-}
-
-.weather-card {
-  grid-column: span 2;
-  background: #fff8e6;
-  border-radius: 12px;
-  padding: 14px;
-  text-align: center;
-  box-shadow: inset 0 0 8px rgba(0,0,0,0.05);
-}
-
-.weather-card h4 {
-  margin: 0 0 6px;
-  font-weight: 600;
-}
-
-#simpleWeather {
-  font-size: 15px;
-  font-weight: 600;
-}
 
 .icon {
   font-size: 22px;
@@ -180,5 +149,3 @@ body {
   font-weight: 600;
   font-size: 14px;
 }
-
-
