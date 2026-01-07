@@ -149,11 +149,3 @@ body {
   font-weight: 600;
   font-size: 14px;
 }
-
-.rain-btn {
-  cursor: pointer;
-}
-
-.rain-btn:hover {
-  opacity: 0.9;
-}
