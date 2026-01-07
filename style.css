@@ -52,6 +52,18 @@ body {
   padding: 14px;
   text-align: center;
 }
+.weather-card {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+  grid-column: span 2;   /* makes it centered like before */
+}
+
+.weather-card .value {
+  font-weight: 600;
+  margin-top: 6px;
+}
 
 .weather-card {
   grid-column: span 2;
@@ -168,4 +180,5 @@ body {
   font-weight: 600;
   font-size: 14px;
 }
+
 
