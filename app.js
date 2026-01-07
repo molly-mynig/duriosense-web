@@ -83,8 +83,6 @@ if (alerts.length > 0) {
     document.getElementById("hum").innerText = latest.humidity + " %";
     document.getElementById("soil").innerText = latest.soil + " %";
     document.getElementById("circ").innerText = latest.circumference + " cm";
-    document.getElementById("rain").innerText =
-      latest.rain === "RAINING" ? "🌧 RAINING" : "☀ NO RAIN";
     document.getElementById("time").innerText =
       new Date(latest.timestamp).toLocaleString();
 // SIMPLE WEATHER STATUS
@@ -142,3 +140,4 @@ function closeAlert() {
 
 
   
+
