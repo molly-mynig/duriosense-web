@@ -57,8 +57,9 @@
         <div class="value" id="circ">--</div>
       </div>
 
-      <div class="status" id="rain">Checking rain...</div>
-    </div>
+      <div class="status rain-btn" id="rain" onclick="toggleRainTrend()">
+  Checking rain...
+</div>
 
     <div class="footer">
       Last updated: <span id="time">--</span>
@@ -77,11 +78,10 @@
     <canvas id="humChart"></canvas>
   </div>
   
-  <!-- RAIN TREND CHART -->
-  <div class="chart-card">
-    <h4>🌧 Rain Trend</h4>
-    <canvas id="rainChart"></canvas>
-  </div>
+ <div class="chart-card" id="rainTrendCard" style="display:none;">
+  <h4>🌧 Rain Trend</h4>
+  <canvas id="rainChart"></canvas>
+</div>
 
   <!-- 4: Tree Circumference Chart -->
   <div class="chart-card">
@@ -105,6 +105,7 @@
 
 </body>
 </html>
+
 
 
 
