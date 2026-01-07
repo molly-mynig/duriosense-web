@@ -54,8 +54,9 @@
         <div class="value" id="circ">--</div>
       </div>
 
-      <div class="status" id="rain">Checking rain...</div>
-    </div>
+      <button class="status rain-btn" id="rain" onclick="toggleRainPopup()">
+  Checking rain...
+</button>
 
     <div class="footer">
       Last updated: <span id="time">--</span>
@@ -93,6 +94,16 @@
     <button onclick="closeAlert()">OK</button>
   </div>
 </div>
+  
+<!-- RAIN TREND POPUP -->
+<div id="rainPopup" class="alert-popup">
+  <div class="alert-box green">
+    <h3>🌧 Rain Trend</h3>
+    <canvas id="rainChart" height="200"></canvas>
+    <button onclick="toggleRainPopup()">Close</button>
+  </div>
+</div>
 
 </body>
 </html>
+
