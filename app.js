@@ -87,6 +87,21 @@ if (alerts.length > 0) {
       latest.rain === "RAINING" ? "🌧 RAINING" : "☀ NO RAIN";
     document.getElementById("time").innerText =
       new Date(latest.timestamp).toLocaleString();
+    
+// SIMPLE WEATHER STATUS
+let weatherText = "";
+
+if (latest.rain === "RAINING") {
+  weatherText = "🌧 Raining";
+}
+else if (latest.humidity > 80) {
+  weatherText = "☁ Cloudy / Humid";
+}
+else {
+  weatherText = "☀ Sunny";
+}
+
+document.getElementById("simpleWeather").innerText = weatherText;
 
     new Chart(tempChart, {
       type: "line",
@@ -128,4 +143,5 @@ function closeAlert() {
 
 
   
+
 
