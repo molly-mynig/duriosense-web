@@ -151,22 +151,9 @@ body {
 }
 
 .rain-btn {
-  all: unset;              /* 💥 THIS IS THE KEY LINE */
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-
-  background: #eef3ff;
-  color: #2c4dcc;
-  padding: 12px;
-  border-radius: 12px;
-  font-weight: 600;
-  text-align: center;
   cursor: pointer;
 }
 
 .rain-btn:hover {
   opacity: 0.9;
 }
-
-
