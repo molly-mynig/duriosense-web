@@ -12,6 +12,7 @@ fetch(firebaseURL)
     const humData = [];
     const soilData = [];
     const circData = [];
+    const rainData = [];
 
     keys.forEach(k => {
       const d = data[k];
@@ -20,6 +21,7 @@ fetch(firebaseURL)
       humData.push(d.humidity);
       soilData.push(d.soil);
       circData.push(d.circumference);
+      rainData.push(d.rain === "RAINING" ? 1 : 0);
     });
 
     const latest = data[keys[keys.length - 1]];
@@ -107,6 +109,31 @@ if (alerts.length > 0) {
       type: "line",
       data: { labels, datasets: [{ data: circData, borderColor: "#ffcc00", tension: 0.3 }] }
     });
+    
+    new Chart(rainChart, {
+  type: "line",
+  data: {
+    labels,
+    datasets: [{
+      data: rainData,
+      borderColor: "#4da6ff",
+      tension: 0.3,
+      stepped: true
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        ticks: {
+          callback: value => value === 1 ? "RAIN" : "NO RAIN"
+        },
+        min: 0,
+        max: 1
+      }
+    }
+  }
+});
+
 
   });
   // ===== ALERT POPUP FUNCTIONS =====
@@ -128,4 +155,5 @@ function closeAlert() {
 
 
   
+
 
