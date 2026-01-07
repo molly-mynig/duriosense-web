@@ -87,7 +87,6 @@ if (alerts.length > 0) {
       latest.rain === "RAINING" ? "🌧 RAINING" : "☀ NO RAIN";
     document.getElementById("time").innerText =
       new Date(latest.timestamp).toLocaleString();
-    
 // SIMPLE WEATHER STATUS
 let weatherText = "";
 
@@ -143,5 +142,3 @@ function closeAlert() {
 
 
   
-
-
