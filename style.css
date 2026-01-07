@@ -149,7 +149,15 @@ body {
   font-weight: 600;
   font-size: 14px;
 }
+
 .rain-btn {
+  display: block;
+  width: 100%;
+  background: #eef3ff;
+  color: #2c4dcc;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: 600;
   border: none;
   cursor: pointer;
 }
@@ -157,4 +165,3 @@ body {
 .rain-btn:hover {
   opacity: 0.9;
 }
-
